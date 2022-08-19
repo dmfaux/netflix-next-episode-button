@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Next Episode Button</title>
+    <style>
+      * {
+        font-size: 16px;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        padding: 0;
+        border: 0;
+        overflow: hidden;
+      }
+
+      body {
+        display: flex;
+        min-height: 100vh;
+        min-width: 100vw;
+        align-items: center;
+        justify-content: center;
+        background-color: #333;
+        gap: 1rem;
+      }
+
+      .credits-button {
+        background-color: #ccc;
+        padding: 1rem 2rem;
+        font-size: 1.3rem;
+      }
+
+      .next-button {
+        background: linear-gradient(to right, #fff 50%, #ccc 50%);
+        animation: backgroundSlide 5s ease-out;
+        background-position: 100% 0%;
+        background-size: 200% 100%;
+        padding: 1rem 2rem;
+        font-size: 1.3rem;
+      }
+
+      @keyframes backgroundSlide {
+        0% {
+          background-position: 100% 0%;
+        }
+        100% {
+          background-position: 0% 0%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="credits-button">Watch Credits</div>
+    <div class="next-button">Next Episode</div>
+  </body>
+</html>
